@@ -1,0 +1,51 @@
+pkgbase = ghostty
+	pkgdesc = Fast, native, feature-rich terminal emulator
+	pkgver = 1.4.0
+	pkgrel = 2
+	url = https://ghostty.org
+	arch = x86_64
+	license = MIT
+	license = GPL-2.0-or-later
+	makedepends = zig>=0.17.0
+	makedepends = zig<0.18.0
+	makedepends = blueprint-compiler
+	makedepends = pandoc-cli
+	makedepends = gettext
+	makedepends = ncurses
+	makedepends = pkgconf
+	depends = fontconfig
+	depends = libfontconfig.so
+	depends = freetype2
+	depends = libfreetype.so
+	depends = glib2
+	depends = libglib-2.0.so
+	depends = libgio-2.0.so
+	depends = libgobject-2.0.so
+	depends = glibc
+	depends = gtk4>=1:4.18
+	depends = libgtk-4.so
+	depends = gtk4-layer-shell>=1.0.4
+	depends = harfbuzz
+	depends = libharfbuzz.so
+	depends = hicolor-icon-theme
+	depends = libadwaita>=1:1.7
+	depends = libadwaita-1.so
+	depends = libglvnd
+	depends = libEGL.so
+	depends = libx11
+	depends = oniguruma
+	depends = libonig.so
+	depends = wayland
+	depends = libwayland-client.so
+	optdepends = nautilus-python: Open in Ghostty from GNOME Files
+	provides = ghostty-shell-integration=1.4.0
+	provides = ghostty-terminfo=1.4.0
+	provides = ghostty-nautilus=1.4.0
+	conflicts = ghostty-shell-integration
+	conflicts = ghostty-terminfo
+	conflicts = ghostty-nautilus
+	options = !debug
+	source = https://github.com/ghostty-org/ghostty/archive/v1.4.0/ghostty-1.4.0.tar.gz
+	sha256sums = 2e2a2516f9bea89a4991ad7c9401b77682eed366387a5b1d7c629472b5d11a43
+
+pkgname = ghostty

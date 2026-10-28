@@ -1,0 +1,6 @@
+/src/
+/pkg/
+/*.pkg.tar*
+/*.log
+/*.log.[0-9]*
+/ghostty-*.tar.gz
